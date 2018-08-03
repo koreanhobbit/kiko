@@ -1,0 +1,5 @@
+/* your styles go here */
+.login-page .form-outer,
+.register-page .form-outer {
+  max-width: 350px;
+}

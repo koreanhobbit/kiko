@@ -1,0 +1,16 @@
+//font awesome
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// override
+@import "override";
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}

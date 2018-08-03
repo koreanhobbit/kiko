@@ -27,6 +27,6 @@ class SendNotification implements ShouldQueue
      */
     public function handle(NewContactMessage $event)
     {
-        Mail::to('ferry.ferryferdinalramli@gmail.com')->subject('Contact Message')->queue(new \App\Mail\NewContactMessage($event->contact));
+        Mail::to('ferry.ferryferdinalramli@gmail.com')->queue(new \App\Mail\NewContactMessage($event->contact));
     }
 }

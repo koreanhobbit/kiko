@@ -56,10 +56,10 @@
 			<p>@lang('landingpage.t_ht_contact_1') <span><a href="#contact">@lang('landingpage.nav_contact')</a></span></p>
 		</div>
 
-		{{-- <button class="accordion">Women Shoes Size Chart</button>
+		<button class="accordion">@lang('landingpage.women_shoes_size_ti')</button>
 		<div class="panel">
 			<div class="table-wrapper">
-				<h3>Women Shoes</h3>
+				<h3>@lang('landingpage.women_shoes_size_ti_in')</h3>
 				<table class="alt">
 					<tr>
 						<th>Korea (mm)</th>
@@ -138,10 +138,10 @@
 				</table>
 			</div>
 		</div>
-		<button class="accordion">Men Shoes Size Chart</button>
+		<button class="accordion">@lang('landingpage.men_shoes_size_ti')</button>
 		<div class="panel">
 			<div class="table-wrapper">
-				<h3>Men Shoes</h3>
+				<h3>@lang('landingpage.men_shoes_size_ti_in')</h3>
 				<table class="alt">
 					<tr>
 						<th>Korea (mm)</th>
@@ -219,7 +219,7 @@
 					</tr>
 				</table>
 			</div>
-		</div> --}}
+		</div>
 		<button class="accordion">@lang('landingpage.t_reseller')</button>
 		<div class="panel">
 			<p>@lang('landingpage.t_reseller_1') <span><a href="#contact">@lang('landingpage.nav_contact')</a></span></p>

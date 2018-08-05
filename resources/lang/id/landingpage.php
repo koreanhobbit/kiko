@@ -42,6 +42,12 @@
 		'men_shoes_size_ti' => 'Ukuran Sepatu Pria',
 		'men_shoes_size_ti_in' => 'Sepatu Pria',
 
+		'kids_shoes_size_ti' => 'Ukuran Sepatu Anak',
+		'kids_shoes_size_ti_in' => 'Sepatu Anak Ukuran Korea (mm)',
+		'kids_shoes_size_ti_month' => 'Bulan',
+		'kids_shoes_size_ti_year' => 'Tahun',
+
+
 		//inside shipping menu
 		//
 		//first title

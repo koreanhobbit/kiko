@@ -220,6 +220,47 @@
 				</table>
 			</div>
 		</div>
+
+		<button class="accordion">@lang('landingpage.kids_shoes_size_ti')</button>
+		<div class="panel">
+			<div class="table-wrapper">
+				<h3>@lang('landingpage.kids_shoes_size_ti_in')</h3>
+				<table class="alt">
+					<tr>
+						<th>3-36 @lang('landingpage.kids_shoes_size_ti_month')</th>
+						<td>70</td>
+						<td>80</td>
+						<td>90</td>
+						<td>100</td>
+						<td>110</td>
+						<td>120</td>
+						<td>130</td>
+						<td>140</td>
+						<td>150</td>
+						<td>160</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				
+					<tr>
+						<th>4-13 @lang('landingpage.kids_shoes_size_ti_year')</th>
+						<td>170</td>
+						<td>180</td>
+						<td>190</td>
+						<td>200</td>
+						<td>210</td>
+						<td>215</td>
+						<td>220</td>
+						<td>225</td>
+						<td>230</td>
+						<td>235</td>
+						<td>240</td>
+						<td>245</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
 		<button class="accordion">@lang('landingpage.t_reseller')</button>
 		<div class="panel">
 			<p>@lang('landingpage.t_reseller_1') <span><a href="#contact">@lang('landingpage.nav_contact')</a></span></p>

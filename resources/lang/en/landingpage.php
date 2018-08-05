@@ -42,6 +42,10 @@
 		'men_shoes_size_ti' => 'Men Shoes Size Chart',
 		'men_shoes_size_ti_in' => 'Men Shoes',
 
+		'kids_shoes_size_ti' => 'Kids Shoes Size Chart',
+		'kids_shoes_size_ti_in' => 'Kids Shoes in Korean Size(mm)',
+		'kids_shoes_size_ti_month' => 'Months',
+		'kids_shoes_size_ti_year' => 'Years',
 
 		//inside shipping menu
 		//

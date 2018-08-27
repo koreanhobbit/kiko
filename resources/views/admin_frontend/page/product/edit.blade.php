@@ -52,7 +52,7 @@
 			                      <label class="col-sm-2 form-control-label {{ $errors->has('description') ? 'text-danger' : '?' }}">Description</label>
 			                      <div class="col-sm-10">
 			                        <textarea>
-										
+										{{ empty($product->description) ? old('description') : $product->description }}
 									</textarea>
 			                        @if($errors->has('description'))
 										<span class="text-small text-danger help-block-none"> 
@@ -66,10 +66,10 @@
 			                    <div class="form-group row">
 			                      <label class="col-sm-2 form-control-label {{ $errors->has('product_code') ? 'text-danger' : '?' }}">Product Code</label>
 			                      <div class="col-sm-10">
-			                        <input type="text" class="form-control {{ $errors->has('slug') ? 'text-danger' : '?' }}" id="slug" name="slug" required>
-			                        @if($errors->has('slug'))
+			                        <input type="text" class="form-control {{ $errors->has('slug') ? 'text-danger' : '?' }}" id="product_code" name="product_code" value="{{ empty($product->product_code) ? old('product_code') : $product->product_code }}" required>
+			                        @if($errors->has('product_code'))
 										<span class="text-small text-danger help-block-none"> 
-				                        	{{ $errors->first('slug') }}		
+				                        	{{ $errors->first('product_code') }}		
 				                        </span>
 			                        @endif
 			                      </div>
@@ -79,7 +79,7 @@
 			                    <div class="form-group row">
 			                      <label class="col-sm-2 form-control-label {{ $errors->has('sku') ? 'text-danger' : '?' }}">SKU</label>
 			                      <div class="col-sm-10">
-			                        <input type="text" class="form-control {{ $errors->has('sku') ? 'text-danger' : '?' }}" id="sku" name="sku" required>
+			                        <input type="text" class="form-control {{ $errors->has('sku') ? 'text-danger' : '?' }}" id="sku" name="sku" value="{{ empty($product->sku) ? old('sku') : $product->sku }}" required>
 			                        @if($errors->has('sku'))
 										<span class="text-small text-danger help-block-none"> 
 				                        	{{ $errors->first('sku') }}		
@@ -92,7 +92,7 @@
 			                    <div class="form-group row">
 			                      <label class="col-sm-2 form-control-label {{ $errors->has('color') ? 'text-danger' : '?' }}">Color</label>
 			                      <div class="col-sm-10">
-			                        <input type="text" class="form-control {{ $errors->has('color') ? 'text-danger' : '?' }}" id="color" name="color" required>
+			                        <input type="text" class="form-control {{ $errors->has('color') ? 'text-danger' : '?' }}" id="color" name="color" value="{{ empty($product->color) ? old('color') : $product->color }}" required>
 			                        @if($errors->has('color'))
 										<span class="text-small text-danger help-block-none"> 
 				                        	{{ $errors->first('color') }}		
@@ -105,7 +105,12 @@
 			                    <div class="form-group row">
 			                      <label class="col-sm-2 form-control-label {{ $errors->has('brand') ? 'text-danger' : '?' }}">Brand</label>
 			                      <div class="col-sm-10">
-			                        <input type="text" class="form-control {{ $errors->has('brand') ? 'text-danger' : '?' }}" id="brand" name="brand" required>
+			                      	<select name="brand" id="brand" class="form-control">
+			                      		<option value="">Choose one brand</option>
+			                      		@foreach($brands as $brand)
+			                      			<option value="{{ $brand->id }}">{{ strtoupper($brand->name) }}</option>
+			                      		@endforeach
+			                      	</select>
 			                        @if($errors->has('brand'))
 										<span class="text-small text-danger help-block-none"> 
 				                        	{{ $errors->first('brand') }}		
@@ -176,21 +181,8 @@
 						<div class="imagePanel">
 							@include('admin_frontend.page.product.part.edit.image')	
 						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="card">
-					                <div class="card-header d-flex align-items-center">
-					                  <h4>Gallery</h4>
-					                </div>
-					                <div class="card-body">
-					                	<div class="form-group row">
-					                      <div class="col-md-12">
-					                       
-					                      </div>
-					                    </div>
-					                </div>
-					            </div>
-							</div>
+						<div class="galleryPanel">
+							@include('admin_frontend.page.product.part.edit.gallery')
 						</div>
 					</div>
 				</div>

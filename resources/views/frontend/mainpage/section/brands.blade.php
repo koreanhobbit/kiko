@@ -4,14 +4,14 @@
 	<div class="row logoSlick">
 		
 			@foreach($logoBrands as $logo)
-				
-				<div>
-					<img src="{{ asset($logo->getMedia('image')->first()->getDiskPath()) }}" alt="" class="img-rounded img-thumbnail">
-					<div class="text-center">
-						<p>{{ strtoupper($logo->name) }}</p>
+				@if($logo->hasMedia('image'))
+					<div>
+						<img src="{{ asset($logo->getMedia('image')->first()->getDiskPath()) }}" alt="" class="img-rounded img-thumbnail">
+						<div class="text-center">
+							<p>{{ strtoupper($logo->name) }}</p>
+						</div>
 					</div>
-				</div>
-				
+				@endif			
 			@endforeach
 		
 	</div>

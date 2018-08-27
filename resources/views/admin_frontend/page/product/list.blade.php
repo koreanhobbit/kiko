@@ -41,7 +41,7 @@
 	                          <td>{{ $product->stock }}</td>
 	                          <td>@mdo</td>
 	                          <td>
-	                          	<a href="" class="btn btn-secondary btn-sm">
+	                          	<a href="{{ route('admin.product.edit', ['id' => $product->id]) }}" class="btn btn-secondary btn-sm">
 	                          		<span>
 	                          			<i class="fa fa-edit"></i>
 	                          		</span>

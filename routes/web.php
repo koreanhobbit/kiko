@@ -78,6 +78,11 @@ Route::group(['prefix' => 'kkmanage'], function() {
 		//############################//
 		//product
 		//############################//
+		//deleteGallery
+		Route::put('product/deleteGallery/{id}', 'AdminProductController@deleteGallery')->name('admin.product.deleteGallery');
+
+		//uploadGallery
+		Route::put('product/uploadGallery/{id}', 'AdminProductController@uploadGallery')->name('admin.product.uploadGallery');
 		
 		//deleteImage
 		Route::post('product/deleteImage/{id}', 'AdminProductController@deleteImage')->name('admin.product.deleteImage');

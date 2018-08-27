@@ -17,6 +17,11 @@ class LogoBrand extends Model
     /**
      * Get the options for generating the slug.
      */
+    public function products() 
+    {
+        return $this->hasMany('App/Product', 'logobrand_id');
+    }
+
     public function getSlugOptions() : SlugOptions
     {
         return SlugOptions::create()

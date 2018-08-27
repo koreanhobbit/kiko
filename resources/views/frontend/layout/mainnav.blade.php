@@ -12,7 +12,7 @@
 
 			<p>@lang('landingpage.kioskorea_is')</p>
 			
-			<a class="button primary" href="https://instagram.com/_u/kioskorea" target="_blank">@lang('landingpage.shop')</a>
+			<a class="button primary" href="https://shop.kioskorea.com" target="_blank">@lang('landingpage.shop')</a>
 		</div>
 	</div>
 	<nav>

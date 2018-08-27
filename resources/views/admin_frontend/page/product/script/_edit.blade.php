@@ -10,47 +10,47 @@
 <script>
 	$(document).ready(function() {   
         //set dropzone for uploading new image into database (featured image)
-            //initiate dropzone
-            $('form#addNewImageDz').dropzone({
-                paramName: "image",
-                acceptedFiles: 'image/*',
-                maxFilesize:3,
-                parallelUploads: 1,  
-                autoProcessQueue: true,
-                init: function() {
-                    thisDropzone = this;
-                    this.on("error", function (file, responseText) {
-                        $.each(responseText, function (index, value) {
-                            $('.dz-error-message').text(value);
-                        });
+        //initiate dropzone
+        $('form#addNewImageDz').dropzone({
+            paramName: "image",
+            acceptedFiles: 'image/*',
+            maxFilesize:3,
+            parallelUploads: 1,  
+            autoProcessQueue: true,
+            init: function() {
+                thisDropzone = this;
+                this.on("error", function (file, responseText) {
+                    $.each(responseText, function (index, value) {
+                        $('.dz-error-message').text(value);
                     });
-                },
-                sending: function(file, response) {
-                    if(!$('.imageLoader').hasClass('loader'))
-                    {
-                        $('.imageLoader').addClass('loader');
-                    }
-                },  
-                
-                success: function(file,response) {
-                    if($('#imageModal').hasClass('show')) {
-                        $('#imageModal').modal('hide');    
-                    }
-
-                    $('.imageLoader').removeClass('loader');
-                    
-                    $('.imagePanel').html(response);
-                    
-                    clickRemoveImage();
-
-                    thisDropzone.removeAllFiles();
-
-                },
-                error:function(data) {
-                    var errors = data.responseJSON.errors;
-                    console.log(errors[data]);
+                });
+            },
+            sending: function(file, response) {
+                if(!$('.imageLoader').hasClass('loader'))
+                {
+                    $('.imageLoader').addClass('loader');
                 }
-            });
+            },  
+            
+            success: function(file,response) {
+                if($('#imageModal').hasClass('show')) {
+                    $('#imageModal').modal('hide');    
+                }
+
+                $('.imageLoader').removeClass('loader');
+                
+                $('.imagePanel').html(response);
+                
+                clickRemoveImage();
+
+                thisDropzone.removeAllFiles();
+
+            },
+            error: function(data) {
+                var errors = data.responseJSON.errors;
+                console.log(errors[data]);
+            }
+        });
 
         //remove image button
         clickRemoveImage();
@@ -76,13 +76,59 @@
                     success: function(data) {
                         $('.imagePanel').html(data);
                     },
-                    error:function(data) {
+                    error: function(data) {
                         var errors = data.responseJSON.errors;
                         console.log(errors);
                     }
                 });
             });
         }
+
+
+        //set dropzone for uploading new gallery into database (gallery)
+        //initiate dropzone
+        $('form#addNewGalleryDz').dropzone({
+            paramName: "image",
+            acceptedFiles: 'image/*',
+            maxFilesize:3,
+            parallelUploads: 20,  
+            autoProcessQueue: true,
+            init: function() {
+                thisDropzone = this;
+                this.on("error", function (file, responseText) {
+                    $.each(responseText, function (index, value) {
+                        $('.dz-error-message').text(value);
+                    });
+                });
+            },
+            sending: function(file, response) {
+                if(!$('.galleryLoader').hasClass('loader'))
+                {
+                    $('.galleryLoader').addClass('loader');
+                }
+            },  
+            
+            success: function(file,response) {
+                if($('#galleryModal').hasClass('show')) {
+                    $('#galleryModal').modal('hide');    
+                }
+
+                $('.galleryLoader').removeClass('loader');
+                
+                $('.galleryPanel').html(response);
+                
+                clickRemoveImage();
+
+                thisDropzone.removeAllFiles();
+
+            },
+            
+            error: function(data) {
+                var errors = data.responseJSON.errors;
+                console.log(errors[data]);
+            }
+        });
+
 
 		// initiate tinymce
         tinymce.init({ 

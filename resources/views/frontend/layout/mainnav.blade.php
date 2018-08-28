@@ -1,7 +1,7 @@
 <!-- Header -->
 <header id="header">
 	<div class="logo">
-		<a href="https://instagram.com/_u/kioskorea" target="_blank"><span><i class="fas fa-gem fa-3x"></i></span></a>
+		<a href="https://shop.kioskorea.com"><span><i class="fas fa-gem fa-3x"></i></span></a>
 	</div>
 	<div class="content">
 		<div class="inner">
@@ -12,7 +12,7 @@
 
 			<p>@lang('landingpage.kioskorea_is')</p>
 			
-			<a class="button primary" href="https://shop.kioskorea.com" target="_blank">@lang('landingpage.shop')</a>
+			<a class="button primary" href="https://shop.kioskorea.com">@lang('landingpage.shop')</a>
 		</div>
 	</div>
 	<nav>

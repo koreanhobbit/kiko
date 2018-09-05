@@ -47,6 +47,8 @@
 		'kids_shoes_size_ti_month' => 'Bulan',
 		'kids_shoes_size_ti_year' => 'Tahun',
 
+		'general_shoes_size_ti' => 'Table Ukuran Sepatu',
+		'general_shoes_size_ti_in' => 'Ukuran Sepatu',
 
 		//inside shipping menu
 		//

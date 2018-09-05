@@ -47,6 +47,9 @@
 		'kids_shoes_size_ti_month' => 'Months',
 		'kids_shoes_size_ti_year' => 'Years',
 
+		'general_shoes_size_ti' => 'Shoes Size Chart List',
+		'general_shoes_size_ti_in' => 'Shoes Size',
+
 		//inside shipping menu
 		//
 		//first title

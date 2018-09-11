@@ -9,6 +9,7 @@
 		'nav_how_to' => 'HOW TO',
 		'nav_ship' => 'SHIPPING',
 		'nav_about' => 'ABOUT',
+		'nav_about_location' => 'LOCATION',
 		'nav_contact' => 'CONTACT',
 		'nav_brands' => 'BRANDS',
 

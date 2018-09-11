@@ -9,6 +9,7 @@
 		'nav_how_to' => 'BAGAIMANA',
 		'nav_ship' => 'PENGIRIMAN',
 		'nav_about' => 'TENTANG KAMI',
+		'nav_about_location' => 'LOKASI',
 		'nav_contact' => 'KONTAK',
 		'nav_brands' => 'MERK',
 

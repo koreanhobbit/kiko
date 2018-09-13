@@ -47,11 +47,13 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="form-group">
-			<label for="email">Email Address</label>
-			<p id="email">
-				admin@kioskorea.com
-			</p>
+		<div class="col">
+			<div class="form-group">
+				<label for="email">Email Address</label>
+				<p id="email">
+					admin@kioskorea.com
+				</p>
+			</div>
 		</div>
 	</div>
 </article>

@@ -29,15 +29,15 @@ mix.copy('resources/assets/frontend/js/min', 'public/frontend/js')
 //######################//
 //####SHOP FRONT END####//
 //######################//
-mix.js('resources/assets/shop_frontend/js/app.js', 'public/shop_frontend/js')
-	.sass('resources/assets/shop_frontend/sass/app.scss', 'public/shop_frontend/css');
+// mix.js('resources/assets/shop_frontend/js/app.js', 'public/shop_frontend/js')
+// 	.sass('resources/assets/shop_frontend/sass/app.scss', 'public/shop_frontend/css');
 
-mix.copy('resources/assets/shop_frontend/css', 'public/shop_frontend/css')
-	.copy('resources/assets/shop_frontend/js/app', 'public/shop_frontend/js')
-	.copy('resources/assets/shop_frontend/fonts', 'public/shop_frontend/fonts')
-	.copy('resources/assets/shop_frontend/images', 'public/shop_frontend/images')
-	.copy('resources/assets/shop_frontend/includes', 'public/shop_frontend/includes')
-	.copy('resources/assets/shop_frontend/vendor', 'public/shop_frontend/vendor');
+// mix.copy('resources/assets/shop_frontend/css', 'public/shop_frontend/css')
+// 	.copy('resources/assets/shop_frontend/js/app', 'public/shop_frontend/js')
+// 	.copy('resources/assets/shop_frontend/fonts', 'public/shop_frontend/fonts')
+// 	.copy('resources/assets/shop_frontend/images', 'public/shop_frontend/images')
+// 	.copy('resources/assets/shop_frontend/includes', 'public/shop_frontend/includes')
+// 	.copy('resources/assets/shop_frontend/vendor', 'public/shop_frontend/vendor');
 
 
 

@@ -32,24 +32,24 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 //######## Route For SHOP #########//
 //#################################//
 
-Route::group(['prefix' => 'shop'], function() {
+// Route::group(['prefix' => 'shop'], function() {
 
 
 	//shop contact page index
-	Route::get('/contact', 'ShopContactPageController@index')->name('shop.contact.index');
+	// Route::get('/contact', 'ShopContactPageController@index')->name('shop.contact.index');
 
 	//shop shop about page index
-	Route::get('/about', 'ShopAboutPageController@index')->name('shop.about.index');
+	// Route::get('/about', 'ShopAboutPageController@index')->name('shop.about.index');
 
 	//shop shopproduct detail page index
-	Route::get('/detail', 'ShopProductDetailPageController@index')->name('shop.productdetail.index');
+	// Route::get('/detail', 'ShopProductDetailPageController@index')->name('shop.productdetail.index');
 
 	//shop shoppage index
-	Route::get('/shop', 'ShopShopPageController@index')->name('shop.shop.index');
+	// Route::get('/shop', 'ShopShopPageController@index')->name('shop.shop.index');
 
 	//shop mainpage index
-	Route::get('/', 'ShopMainPageController@index')->name('shop.mainpage.index');
-});
+	// Route::get('/', 'ShopMainPageController@index')->name('shop.mainpage.index');
+// });
 
 
 

@@ -12,7 +12,7 @@
 					Korea
 				</label>
 				<p id="address1">
-					Seoul Gwanak-gu Cheongryong 6gil 3 South Korea.
+					Seoul Gangnam gu Yeongdong ro 513 COEX 2nd Floor Commercial Exhibition Hall A100, South Korea.
 				</p>	
 			</div>
 		</div>

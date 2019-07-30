@@ -11,13 +11,9 @@
 				<label for="address1">
 					Korea
 				</label>
-				<p>
-					글로발 코리아 (Global Korea)
-				</p>
-				<p>
-					Registration Number: 669-20-01150
-				</p>
 				<p id="address1">
+					글로발 코리아 (Global Korea) <br>
+					Business Registration Number: 669-20-01150 <br> 
 					Seoul Gangnam gu Yeongdong ro 513 COEX 2nd Floor Commercial Exhibition Hall A100, South Korea.
 				</p>	
 			</div>
@@ -38,13 +34,9 @@
 				<label for="address1">
 					Indonesia
 				</label>
-				<p>
-					PT. Global Oasis Indonesia (GO Indonesia)
-				</p>
-				<p>
-					Business Registration Number: 8120010043115
-				</p>
 				<p id="address1">
+					PT. Global Oasis Indonesia (GO Indonesia) <br>
+					Business Registration Number: 8120010043115 <br>
 					Ruko Madrid 2 Blok G/22 BSD Tangerang Selatan, Indonesia.
 				</p>	
 			</div>
